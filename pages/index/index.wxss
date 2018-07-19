@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+/*幻灯片样式*/
+.banner swiper{
+    width: 100%;
+    height: 375rpx;
+   
+}
+.banner swiper image{
+    width: 100%;
+    height: 375rpx;
+   
+}
+/*幻灯片样式*/
+
+/*TAB样式*/
+.swiper-tab{  
+    width: 100%;  
+   
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+    width: 50%;
+    color: #777777;
+}  
+.on{ color: #da7c0c;  
+    border-bottom: 2rpx solid #da7c0c;}  
+  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{
+    text-align: center;  
+}
+/*TAB样式*/
+
+/*九宫格样式*/
+.zan-col {
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 12px;
+  color: #fff;
+  
+}
+.zan-col:nth-child(even) {
+  background-color: #fff;
+}
+
+.zan-panel{
+  border: 0px;
+}
+/*九宫格样式*/

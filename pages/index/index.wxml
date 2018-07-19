@@ -1,0 +1,95 @@
+<!--index.wxml-->
+ 
+ <view class="banner">
+ <!--加载样式-->
+  <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+     <!--幻灯片-->
+        <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+
+    <!--TAB选项卡-->  
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">衡阳市</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">衡阳县</view>  
+  
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 200}}px" bindchange="bindChange">  
+    <!-- 衡阳市 -->
+    <swiper-item>
+       <view class="zan-panel">
+    <view class="zan-row">
+      <view class="zan-col zan-col-8" bindtap="hysbaojieyuyue">
+      <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/baojieyuyue.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hysjujiabaomu">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/jujiabaomu.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hysyuesao">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/yuesao.png"></image>
+      </view>
+
+        <view class="zan-col zan-col-8" bindtap="hysyuyingshi">
+      <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/yuyingshi.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hysjiazhengpeixun">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/jiazhengpeixun.png"></image>
+      </view>
+      <view class="zan-col zan-col-8"  bindtap="hyshuiyuanzhongxin">
+        <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/huiyuanzhongxin.png"></image>
+      </view>
+    </view>
+  </view>
+    </swiper-item>
+    <!-- 衡阳县 -->
+    <swiper-item>
+       <view class="zan-panel">
+    <view class="zan-row">
+      <view class="zan-col zan-col-8" bindtap="hyxbaojieyuyue">
+      <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/baojieyuyue.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hyxjujiabaomu">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/jujiabaomu.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hyxyuesao">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/yuesao.png"></image>
+      </view>
+
+        <view class="zan-col zan-col-8" bindtap="hyxyuyingshi">
+      <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/yuyingshi.png"></image>
+      </view>
+      <view class="zan-col zan-col-8" bindtap="hyxjiazhengpeixun">
+       <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/jiazhengpeixun.png"></image>
+      </view>
+      <view class="zan-col zan-col-8"  bindtap="hyxhuiyuanzhongxin">
+        <image style="width: 110px; height: 110px;"src="https://m.0734lmz.cn/images/huiyuanzhongxin.png"></image>
+      </view>
+    </view>
+  </view>
+    </swiper-item>
+    
+</swiper>  
+
+    
+
+  
+
+    
+
+
+
+
+
+
+
+
+

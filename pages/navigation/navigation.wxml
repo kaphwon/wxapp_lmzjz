@@ -1,0 +1,28 @@
+<view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">
+        <view class="zan-cell__text">衡阳市辣妹子家政公司</view>
+        <view class="zan-cell__desc">地址：衡阳市船山路48号</view>
+         <view class="zan-cell__desc">（点击地图开始导航）</view>
+      </view>
+      <view class="zan-cell__ft"  bindtap="callinghys"><view class="zan-icon zan-icon-phone"  style="color: #09bb07;"></view></view>
+    </view>
+  </view>
+<map id="map" longitude="112.6023530960" latitude="26.9035293327" markers="{{markers}}"  
+scale="28"  style="width: 100%; height: 300px;" bindtap="hengyangshi">  
+</map> 
+
+
+<view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">
+        <view class="zan-cell__text">辣妹子家政衡阳县分公司</view>
+        <view class="zan-cell__desc">地址：西渡镇西渡镇越富家园</view>
+         <view class="zan-cell__desc">（点击地图开始导航）</view>
+      </view>
+      <view class="zan-cell__ft" bindtap="callinghyx"><view class="zan-icon zan-icon-phone"  style="color: #09bb07;"></view></view>
+    </view>
+  </view>
+<map id="map2" longitude="112.3655900000" latitude="26.9748400000" markers="{{markers}}"  
+scale="28"  style="width: 100%; height: 300px;" bindtap="xiduzhen">  
+</map> 

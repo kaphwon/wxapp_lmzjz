@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/navigation/navigation",
+    "pages/webview/webview"
+  ],
+ 
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "辣妹子家政",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d81e06",
+    "borderStyle": "#b2b2b2",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "selectedIconPath": "images/ahome.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/anavigation.png",
+        "iconPath": "images/navigation.png",
+        "pagePath": "pages/navigation/navigation",
+        "text": "导航"
+      }
+    ]
+  }
+  
+}
+
